@@ -1,0 +1,7 @@
+<div class='field' data-sortable='true'>
+  <%= f.label :nested_models %>
+  <%= f.fields_for :nested_models do |j| %>
+    <%= render 'refinery/admin/pages/nested_model_fields', :f => j %>
+  <% end %>
+  <%= link_to_add_fields 'Add nested model', f, :nested_models %>
+</div>

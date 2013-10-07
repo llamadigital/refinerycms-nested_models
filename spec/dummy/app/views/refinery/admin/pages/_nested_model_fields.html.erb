@@ -1,0 +1,13 @@
+<fieldset class='nested' data-sortable-item='true'>
+  <%= refinery_icon_tag 'arrow_switch', 'data-handle' => true, :title => 'Reorder', :class => 'handle' %>
+  <%= f.hidden_field :position, 'data-position' => true %>
+  <div class='field'>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+  <div class='field'>
+    <%= f.label :image %>
+    <%= render 'refinery/admin/image_picker', f: f, field: :image_id, image: f.object.image %>
+  </div>
+  <%= link_to_remove_field 'Remove this nested model', f %>
+</fieldset>

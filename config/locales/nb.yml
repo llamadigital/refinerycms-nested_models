@@ -1,0 +1,27 @@
+nb:
+  refinery:
+    plugins:
+      nested_models:
+        title: Nested Models
+    nested_models:
+      admin:
+        nested_models:
+          actions:
+            create_new: Lag en ny Nested Model
+            reorder: Endre rekkefølgen på Nested Models
+            reorder_done: Ferdig å endre rekkefølgen Nested Models
+          records:
+            title: Nested Models
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Nested Models enda. Klikk på "Lag en ny Nested Model" for å legge til din første nested model.
+          nested_model:
+            view_live_html: Vis hvordan denne nested model ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne nested model
+            delete: Fjern denne nested model permanent
+      nested_models:
+        show:
+          other: Andre Nested Models
+  activerecord:
+    attributes:
+      'refinery/nested_models/nested_model':
+        name: Name

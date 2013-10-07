@@ -1,0 +1,27 @@
+cs:
+  refinery:
+    plugins:
+      nested_models:
+        title: Nested Models
+    nested_models:
+      admin:
+        nested_models:
+          actions:
+            create_new: Přidat Nested Model
+            reorder: Řadit Nested Models
+            reorder_done: Konec řazení Nested Models
+          records:
+            title: Nested Models
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Nested Models. Zvolte "Přidat Nested Model" pro přidání prvního nested model.
+          nested_model:
+            view_live_html: Zobrazit náhled nested model<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit nested model
+            delete: Smazat nested model
+      nested_models:
+        show:
+          other: Další Nested Models
+  activerecord:
+    attributes:
+      'refinery/nested_models/nested_model':
+        name: Name

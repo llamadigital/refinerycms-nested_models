@@ -1,0 +1,27 @@
+tr:
+  refinery:
+    plugins:
+      nested_models:
+        title: Nested Models
+    nested_models:
+      admin:
+        nested_models:
+          actions:
+            create_new: Yeni Ekle Nested Model
+            reorder: Tekrar sirala Nested Models
+            reorder_done: Tekrar siralama tamamlandiNested Models
+          records:
+            title: Nested Models
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Nested Models yok henuz.  Tikla "Yeni Ekle Nested Model" eklemek senin ilk nested model.
+          nested_model:
+            view_live_html: Bunu canlu nested model goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle nested model
+            delete: Bunu Sil nested model sonsuza dek
+      nested_models:
+        show:
+          other: Diger Nested Models
+  activerecord:
+    attributes:
+      'refinery/nested_models/nested_model':
+        name: Name

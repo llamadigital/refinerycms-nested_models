@@ -1,0 +1,27 @@
+it:
+  refinery:
+    plugins:
+      nested_models:
+        title: Nested Models
+    nested_models:
+      admin:
+        nested_models:
+          actions:
+            create_new: Aggiungi Nuovo Nested Model
+            reorder: Riordina Nested Models
+            reorder_done: Termina il Riordino di Nested Models
+          records:
+            title: Nested Models
+            sorry_no_results: "Spiacenti! Nessun risultato trovato"
+            no_items_yet: Non ci sono ancora Nested Models. Clicca "Aggiungi Nuovo Nested Model" per aggiungere il tuo primo nested model.
+          nested_model:
+            view_live_html: Guarda live questo nested model <br/><em>(apre una nuova finestra)</em>
+            edit: Modifica questo nested model
+            delete: Rimuovi per sempre questo nested model
+      nested_models:
+        show:
+          other: Altri Nested Models
+  activerecord:
+    attributes:
+      'refinery/nested_models/nested_model':
+        name: Name

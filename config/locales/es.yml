@@ -1,0 +1,28 @@
+es:
+  refinery:
+    plugins:
+      nested_models:
+        title: Nested Models
+#        article: masculino/femenino
+    nested_models:
+      admin:
+        nested_models:
+          actions:
+            create_new: Crear nuevo nested model
+            reorder: Reordenar nested models
+            reorder_done: Reordenación de nested models completada
+          records:
+            title: Nested Models
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay nested models todavía. Pulsa en "Crear nuevo Nested Model" para crear tu primer nested model.
+          nested_model:
+            view_live_html: Ver este nested model como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este nested model
+            delete: Borrar este nested model para siempre
+      nested_models:
+        show:
+          other: Otros nested models
+  activerecord:
+    attributes:
+      'refinery/nested_models/nested_model':
+        name: Name

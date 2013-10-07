@@ -1,0 +1,29 @@
+zh-CN:
+  refinery:
+    plugins:
+      nested_models:
+        title: Nested Models
+    nested_models:
+      admin:
+        nested_models:
+          actions:
+            create_new: 建立新的 Nested Model
+            reorder: 对 Nested Models 重新排序
+            reorder_done: 对 Nested Models 的重新排序结束
+          records:
+            title: Nested Models
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Nested Models yet. Click "Add New Nested Model" to add your first nested model.
+            no_items_yet: 目前没有 Nested Models . 点击 "Add New Nested Model" 创建一个nested model.
+          nested_model:
+            view_live_html: 查看 nested model 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 nested model
+            delete: 永久删除 nested model
+      nested_models:
+        show:
+          other: 其他 Nested Models
+  activerecord:
+    attributes:
+      'refinery/nested_models/nested_model':
+        name: Name

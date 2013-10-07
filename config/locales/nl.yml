@@ -1,0 +1,27 @@
+nl:
+  refinery:
+    plugins:
+      nested_models:
+        title: Nested Models
+    nested_models:
+      admin:
+        nested_models:
+          actions:
+            create_new: Nieuwe Nested Model toevoegen
+            reorder: De volgorde van de Nested Models wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Nested Model-volgorde
+          records:
+            title: Nested Models
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Nested Models. Druk op 'Nieuwe Nested Model toevoegen' om de eerste toe te voegen.
+          nested_model:
+            view_live_html: Deze nested model op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze nested model
+            delete: Deze nested model definitief verwijderen
+      nested_models:
+        show:
+          other: Andere Nested Models
+  activerecord:
+    attributes:
+      'refinery/nested_models/nested_model':
+        name: Name

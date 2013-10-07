@@ -1,0 +1,20 @@
+fieldset.nested {
+  margin-top: 10px;
+  border: 1px dotted #CCC;
+}
+
+a.add_fields, a.remove_fields {
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.ui-sortable-placeholder {
+  background-color: #FFFFCC; 
+  border: 2px dashed #FFFF00;
+  visibility: visible !important;
+  min-height: 200px;
+}
+
+.handle {
+  float: right;
+}
