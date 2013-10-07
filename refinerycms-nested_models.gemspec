@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.date              = '2013-10-04'
   s.summary           = 'Nested Models extension for Refinery CMS'
   s.require_paths     = %w(lib)
-  s.files             = Dir["{app,config,db,lib}/**/*"] + ["readme.md"]
+  s.files             = Dir["{app,config,db,lib}/**/*"] + ["README.md"]
   s.authors           = ['Nick Bolt']
 
   # Runtime dependencies
