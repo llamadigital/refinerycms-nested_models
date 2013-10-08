@@ -80,6 +80,12 @@ And the following to the nested model:
   attr_accessible :position
 ```
 
+And the following to the nested field
+
+``` erb
+  <fieldset class='nested' data-sortable-item='true'>
+```
+
 ### Adding refinery images to nested models
 
 Add the following to the nested model:
