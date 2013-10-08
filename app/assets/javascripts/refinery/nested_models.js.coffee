@@ -3,7 +3,7 @@ jQuery ->
 
   $('form').on 'click', '[data-remove="true"]', (event) ->
     $(this).prev('input[type=hidden]').val('1')
-    $(this).closest('[data-sortable-item="true"]').hide()
+    $(this).closest('[data-nested-item="true"]').hide()
     event.preventDefault()
 
   $('form').on 'click', '[data-add="true"]', (event) ->

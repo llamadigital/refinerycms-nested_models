@@ -44,7 +44,7 @@ You will also need to create the partial file mentioned (refinery/admin/pages/ne
 Below is an example of the nested model fields:
 
 ``` erb
-<fieldset class='nested'>
+<fieldset class='nested' data-nested-item='true'>
   <div class='field'>
     <%= f.label :name %>
     <%= f.text_field :name %>
