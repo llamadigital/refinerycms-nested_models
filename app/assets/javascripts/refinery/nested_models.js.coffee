@@ -13,6 +13,7 @@ jQuery ->
     $(this).before(fields.replace(regexp, time))
     init_modal_dialogs()
     init_nested_sorts()
+    init_tooltips()
     event.preventDefault()
 
 window.init_nested_sorts = ->
