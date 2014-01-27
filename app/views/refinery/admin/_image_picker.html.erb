@@ -3,7 +3,7 @@
   thumbnail ||= 'medium'
   toggle_image_display ||= false
   conditions ||= nil
-  randomiser = f.object.new_record? ? f.object.object_id : rand(Time.now.yesterday.to_i * Time.now.to_i)
+  randomiser = (f.object.new_record? && force_unnested.nil?) ? f.object.object_id : rand(Time.now.yesterday.to_i * Time.now.to_i)
   current_image_link_href = refinery.insert_admin_images_path(:dialog => true, :callback => "image_picker_#{randomiser}_changed",
                                                     :width => 866, :height => 510, :conditions => conditions)
   current_image_title = t('.change', :what =>  description.titleize)
@@ -32,7 +32,7 @@
   </div>
 </div>
 
-<% if f.object.new_record? %>
+<% if f.object.new_record? && force_unnested.nil? %>
   <script>
     var image_picker_<%= randomiser %> = {};
     $.extend(true, image_picker_<%= randomiser %>, image_picker);
