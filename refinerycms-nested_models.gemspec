@@ -3,9 +3,8 @@
 Gem::Specification.new do |s|
   s.platform          = Gem::Platform::RUBY
   s.name              = 'refinerycms-nested_models'
-  s.version           = '0.0.4'
+  s.version           = '0.0.5'
   s.description       = 'Ruby on Rails Nested Models extension for Refinery CMS'
-  s.date              = '2013-10-04'
   s.summary           = 'Nested Models extension for Refinery CMS'
   s.require_paths     = %w(lib)
   s.files             = Dir["{app,config,db,lib}/**/*"] + ["README.md"]
