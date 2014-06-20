@@ -14,7 +14,7 @@ module Refinery
       def link_to_remove_field(label, builder)
         ret = ''
         ret += builder.hidden_field :_destroy, :class => 'destroy'
-        ret += link_to_function label, 'return true', class: 'remove_fields', data: {remove: true}
+        ret += content_tag :a, label, class: 'remove_fields', data: {remove: true}
         raw ret
       end
     end
