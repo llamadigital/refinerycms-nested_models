@@ -15,8 +15,8 @@ module Refinery
       end
 
       Refinery::Core.configure do |config| #   # Register extra javascript for backend
-        config.register_javascript 'refinery/nested_models.js.coffee'
-        config.register_stylesheet "refinery/nested_models.css.scss", :media => 'screen'
+        config.register_javascript 'refinery/nested_models.js'
+        config.register_stylesheet "refinery/nested_models.css", :media => 'screen'
       end
     end
   end
