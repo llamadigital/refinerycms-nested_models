@@ -3,7 +3,7 @@
 Gem::Specification.new do |s|
   s.platform          = Gem::Platform::RUBY
   s.name              = 'refinerycms-nested_models'
-  s.version           = '0.1.0'
+  s.version           = '0.1.1'
   s.description       = 'Ruby on Rails Nested Models extension for Refinery CMS'
   s.summary           = 'Nested Models extension for Refinery CMS'
   s.require_paths     = %w(lib)

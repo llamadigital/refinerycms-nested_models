@@ -33,8 +33,8 @@
   </div>
 </div>
 
-<% if f.object.new_record? && force_unnested.nil? %>
-  <script>
+<% if f.object.new_record? && !force_unnested %>
+  <script class='image-picker'>
     var image_picker_<%= randomiser %> = {};
     $.extend(true, image_picker_<%= randomiser %>, image_picker);
     image_picker_<%= randomiser %> = image_picker_<%= randomiser %>.init({
